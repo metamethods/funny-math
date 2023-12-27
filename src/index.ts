@@ -61,6 +61,10 @@ async function handleRequest(_: Request, response: Response) {
 
   response.contentType('image/png');
   response.header('Cache-Control', 'no-store');
+  response.header('Expires', '0');
+  response.header('Pragma', 'no-cache');
+  response.header('Surrogate-Control', 'no-store');
+  response.header('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
   response.send(await image.getBufferAsync(Jimp.MIME_PNG));
 }
 
