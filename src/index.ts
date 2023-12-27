@@ -38,7 +38,7 @@ function handleTwitterEmbed(response: Response, slug: string) {
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="og:title" content="Funny Math" />
       <meta property="og:description" content="A funny math equation" />
-      <meta property="og:image" content="https://funny-math-production.up.railway.app/${slug}" />
+      <meta property="og:image" content="https://funny-math-production.up.railway.app/${slug}?skipTwitterEmbed=true" />
     </head>
     <body><p>not supposed to see this buddy</p></body>
   </html>
@@ -59,6 +59,7 @@ async function index(_: Request, response: Response) {
 
 async function handleEquationSlug(request: Request, response: Response) {
   const slug = request.params.equation;
+  const skipTwitterEmbed = request.query.skipTwitterEmbed;
   const equationSet = equationSets[slug];
 
   if (!equationSet) return response.status(404).send('Set not found');
@@ -70,7 +71,10 @@ async function handleEquationSlug(request: Request, response: Response) {
 
   const imageBuffer = await render(equationSet.information, randomEquation);
 
-  if (request.headers['user-agent']?.includes('Twitterbot/1.0'))
+  if (
+    request.headers['user-agent']?.includes('Twitterbot/1.0') &&
+    !skipTwitterEmbed
+  )
     return handleTwitterEmbed(response, slug);
 
   response.setHeader('Content-Type', 'image/png');
