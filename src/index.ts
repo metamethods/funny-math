@@ -30,6 +30,21 @@ export interface EquationSet {
   equations: Equation[];
 }
 
+function handleTwitterEmbed(response: Response, slug: string) {
+  response.send(`
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="og:title" content="Funny Math" />
+      <meta property="og:description" content="A funny math equation" />
+      <meta property="og:image" content="https://funny-math-production.up.railway.app/${slug}" />
+    </head>
+    <body><p>not supposed to see this buddy</p></body>
+  </html>
+  `);
+}
+
 async function index(_: Request, response: Response) {
   const equations = [];
 
@@ -54,6 +69,9 @@ async function handleEquationSlug(request: Request, response: Response) {
     ];
 
   const imageBuffer = await render(equationSet.information, randomEquation);
+
+  if (request.headers['user-agent']?.includes('Twitterbot/1.0'))
+    return handleTwitterEmbed(response, slug);
 
   response.setHeader('Content-Type', 'image/png');
   response.setHeader('Cache-Control', 'no-store');
