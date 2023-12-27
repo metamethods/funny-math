@@ -1,0 +1,22 @@
+{
+  "name": "math_cache",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bun build src/index.ts --outdir dist",
+    "start": "node dist/index.js",
+    "start:dev": "bun --hot run src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "jimp": "^0.22.10",
+    "svg2img": "^1.0.0-beta.2",
+    "texsvg": "^2.0.7"
+  }
+}
