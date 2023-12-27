@@ -1,0 +1,149 @@
+[information]
+name = "Asian Mode"
+description = "Super ultra hard math equations :wild:"
+author = "metamethods"
+title = "Only real people can solve this"
+
+[[equations]]
+latex = "\\frac{\\sqrt{\\Box^3 + 2 \\Box + \\sin(\\Box)}}{\\int_{\\Box}^{\\Box^2} e^{-\\Box^2} \\, dx}"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\infty} \\left(\\frac{\\Box^n}{n!}\\right) + \\prod_{i=1}^{\\Box} (i^2 - 1)"
+
+[[equations]]
+latex = "\\int_{-\\infty}^{\\infty} e^{-\\frac{(\\Box - \\mu)^2}{2\\sigma^2}} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\Box}{\\sqrt{\\Box^2 + 1}}\\right)^{\\Box}"
+
+[[equations]]
+latex = "\\sqrt{\\Box} \\cdot \\frac{\\Box!}{\\prod_{i=1}^{\\Box} (i^2 + 1)} + \\int_{0}^{\\Box} \\frac{\\sin(\\Box)}{\\Box} \\, dx"
+
+[[equations]]
+latex = "\\sum_{k=0}^{\\Box} \\binom{\\Box}{k} \\cos(\\pi k) + \\int_{\\Box}^{\\Box^2} \\frac{\\Box^3 + 2\\Box^2}{\\Box} \\, dx"
+
+[[equations]]
+latex = "\\prod_{n=1}^{\\Box} \\left(1 + \\frac{1}{n}\\right) \\cdot \\sqrt{\\Box} - \\sum_{k=1}^{\\Box} \\frac{(-1)^k}{2k-1}"
+
+[[equations]]
+latex = "\\int_{\\Box}^{\\infty} e^{-\\frac{\\Box^2}{2}} \\cos(\\Box) \\, dx + \\sum_{n=1}^{\\Box} \\frac{(-1)^n}{n}"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to 0}} \\left(1 + \\frac{\\Box}{\\sin(\\Box)}\\right)^{\\frac{\\sqrt{\\Box^2 + 1}}{\\Box^2}}"
+
+[[equations]]
+latex = "\\int_{-\\infty}^{\\Box} \\frac{e^{-\\frac{\\Box^2}{2}}}{\\sqrt{2\\pi}} \\, dx - \\sum_{n=1}^{\\Box} \\frac{(-1)^n}{n!}"
+
+[[equations]]
+latex = "\\sqrt{\\frac{\\Box^2}{\\Box + 1}} + \\int_{\\Box}^{\\Box^2} \\frac{1}{\\Box + e^{-\\Box}} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{1}{\\Box}\\right)^{\\Box^2} - \\sum_{n=1}^{\\Box} \\frac{1}{n}"
+
+[[equations]]
+latex = "\\prod_{n=2}^{\\Box+1} \\left(1 - \\frac{1}{n}\\right) \\cdot \\frac{\\Box!}{\\sqrt{\\Box}}"
+
+[[equations]]
+latex = "\\int_{\\Box}^{\\Box^2} \\frac{1}{1 + e^{\\Box}} \\, dx + \\cos(\\Box) \\cdot \\sin(\\Box)"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\Box} \\frac{\\Box^n}{n!} \\cdot \\frac{1}{\\sqrt{\\Box}} + \\int_{0}^{\\Box} \\frac{e^{-\\Box}}{\\Box} \\, dx"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\sqrt{\\Box + n}} + \\frac{\\Box^2}{\\prod_{n=1}^{\\Box} n^2}"
+
+[[equations]]
+latex = "\\int_{0}^{\\Box} \\sqrt{1 - \\sin^2(\\Box)} \\, dx + \\sum_{n=1}^{\\Box} \\frac{1}{n}"
+
+[[equations]]
+latex = "\\int_{\\Box}^{\\infty} e^{-\\frac{\\Box^2}{2}} \\cos(\\Box) \\, dx - \\sum_{n=1}^{\\Box} \\frac{(-1)^n}{n!} + \\prod_{k=1}^{\\Box} (2k - 1)"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{1}{\\Box}\\right)^{\\Box^2} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt{\\Box + 1}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx - \\sqrt{\\Box^3 + 2 \\Box + \\sin(\\Box)}"
+
+[[equations]]
+latex = "\\prod_{n=1}^{\\Box} \\left(1 + \\frac{1}{n^2}\\right) \\cdot \\sqrt{\\Box} - \\sum_{k=1}^{\\Box} \\frac{(-1)^k}{k^2} + \\int_{0}^{\\Box} \\sin(\\Box) \\, dx"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\Box} \\frac{(-1)^n}{\\sqrt{\\Box + n}} + \\frac{\\Box^2}{\\prod_{n=1}^{\\Box} n^2} - \\int_{0}^{\\Box} \\sqrt{1 - \\sin^2(\\Box)} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\frac{\\sqrt{\\Box}}{\\log(\\Box)}"
+
+[[equations]]
+latex = "\\int_{0}^{\\infty} e^{-\\frac{\\Box^2}{2}} \\cos(\\Box) \\, dx + \\sum_{n=1}^{\\Box} \\frac{(-1)^n}{n!} - \\frac{1}{\\sqrt{\\Box}}"
+
+[[equations]]
+latex = "\\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{\\Box} e^{-\\frac{\\Box^2}{2}} \\cos(\\Box) \\, dx - \\sum_{n=1}^{\\Box} \\frac{1}{2^n} + \\frac{1}{\\Box^2}"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{1}{\\Box}\\right)^{\\Box^2} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt{\\Box^3 + 2 \\Box + \\sin(\\Box)}"
+
+[[equations]]
+latex = "\\prod_{n=2}^{\\Box+1} \\left(1 - \\frac{1}{n}\\right) \\cdot \\frac{\\Box!}{\\sqrt{\\Box}} - \\sum_{k=1}^{\\Box} \\frac{(-1)^k}{k} + \\int_{0}^{\\Box} e^{-\\sin(\\Box)} \\, dx"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx - \\lim_{{\\Box \\to \\infty}} \\frac{1}{\\Box} + \\frac{1}{\\Box^2}"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt[\\Box]{\\Box!}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx - \\sqrt{\\Box + \\sin(\\Box)} + \\sum_{k=1}^{\\Box} \\frac{1}{2k}"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\Box} \\frac{\\Box^n}{n!} \\cdot \\frac{1}{\\sqrt{\\Box}} + \\int_{0}^{\\Box} \\frac{e^{-\\Box}}{\\Box} \\, dx - \\prod_{n=1}^{\\Box} (1 + \\cos(\\Box))"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt[\\Box]{\\Box!}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx - \\sqrt{\\Box + \\sin(\\Box)} + \\sum_{k=1}^{\\Box} \\frac{1}{2k}"
+
+[[equations]]
+latex = "\\prod_{n=2}^{\\Box+1} \\left(1 - \\frac{1}{n}\\right) \\cdot \\frac{\\Box!}{\\sqrt{\\Box}} - \\sum_{k=1}^{\\Box} \\frac{(-1)^k}{k} + \\int_{0}^{\\Box} e^{-\\sin(\\Box)} \\, dx"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx - \\lim_{{\\Box \\to \\infty}} \\frac{1}{\\Box} + \\frac{1}{\\Box^2}"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt[\\Box]{\\Box!}"
+
+[[equations]]
+latex = "\\prod_{n=2}^{\\Box+1} \\left(1 - \\frac{1}{n}\\right) \\cdot \\frac{\\Box!}{\\sqrt{\\Box}} - \\sum_{k=1}^{\\Box} \\frac{(-1)^k}{k} + \\int_{0}^{\\Box} e^{-\\sin(\\Box)} \\, dx"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx - \\lim_{{\\Box \\to \\infty}} \\frac{1}{\\Box} + \\frac{1}{\\Box^2}"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt[\\Box]{\\Box!}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx - \\sqrt{\\Box + \\sin(\\Box)} + \\sum_{k=1}^{\\Box} \\frac{1}{2k}"
+
+[[equations]]
+latex = "\\sum_{n=1}^{\\Box} \\frac{\\Box^n}{n!} \\cdot \\frac{1}{\\sqrt{\\Box}} + \\int_{0}^{\\Box} \\frac{e^{-\\Box}}{\\Box} \\, dx - \\prod_{n=1}^{\\Box} (1 + \\cos(\\Box))"
+
+[[equations]]
+latex = "\\sqrt{\\Box^2 + 1} + \\int_{-\\Box}^{\\Box} \\frac{\\Box}{\\sqrt{\\Box^2 + 1}} \\, dx"
+
+[[equations]]
+latex = "\\lim_{{\\Box \\to \\infty}} \\left(1 + \\frac{\\sin(\\Box)}{\\Box}\\right)^{\\Box} - \\sum_{n=1}^{\\Box} \\frac{1}{n} + \\sqrt[\\Box]{\\Box!}"
+
+[[equations]]
+latex = "\\frac{\\Box!}{\\prod_{n=1}^{\\Box} n^2} + \\int_{\\Box}^{\\Box^2} e^{\\cos(\\Box)} \\, dx - \\sqrt{\\Box + \\sin(\\Box)} + \\sum_{k=1}^{\\Box} \\frac{1}{2k}"

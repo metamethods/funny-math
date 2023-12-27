@@ -1,0 +1,65 @@
+[information]
+name = "Pemdas"
+description = "Pemdas ez"
+author = "metamethods"
+title = "Only 99.9% of people can solve these!1"
+
+[[equations]]
+latex = "3 \\cdot \\Box + (5 - 2) \\div \\Box"
+
+[[equations]]
+latex = "2 \\cdot (\\Box + 4) - \\Box^2"
+
+[[equations]]
+latex = "\\frac{\\Box + 7}{2} + 3 \\cdot (1 - \\Box)"
+
+[[equations]]
+latex = "\\Box^2 - 4 \\cdot \\Box + 6"
+
+[[equations]]
+latex = "5 - \\frac{\\Box}{2} + \\frac{8}{\\Box - 1}"
+
+[[equations]]
+latex = "3 \\cdot (\\Box + 2) - 7 + \\frac{\\Box}{4}"
+
+[[equations]]
+latex = "2 \\cdot \\Box^2 + 5 \\cdot \\Box - 3"
+
+[[equations]]
+latex = "\\frac{\\Box}{2} + 4 \\cdot (\\Box - 3)"
+
+[[equations]]
+latex = "(\\Box + 1)^2 - 5 \\cdot (\\Box - 2)"
+
+[[equations]]
+latex = "6 - 2 \\cdot \\Box + \\frac{5}{\\Box + 3}"
+
+[[equations]]
+latex = "4 \\cdot \\Box^2 - \\Box + 8"
+
+[[equations]]
+latex = "\\frac{3}{\\Box} + 2 \\cdot \\Box - 1"
+
+[[equations]]
+latex = "(\\Box - 3) \\cdot (2 + \\Box) + 5"
+
+[[equations]]
+latex = "\\frac{\\Box}{3} + \\frac{2 \\cdot (\\Box - 1)}{4}"
+
+[[equations]]
+latex = "3 \\cdot \\Box + 2 \\cdot (\\Box - 1) - 7"
+
+[[equations]]
+latex = "\\frac{4}{\\Box + 2} - \\frac{\\Box - 1}{3}"
+
+[[equations]]
+latex = "2 \\cdot \\Box - \\frac{\\Box}{4} + 5"
+
+[[equations]]
+latex = "1 - \\frac{2 \\cdot (\\Box + 3)}{\\Box - 1}"
+
+[[equations]]
+latex = "\\frac{\\Box^2 - 9}{\\Box + 3}"
+
+[[equations]]
+latex = "5 \\cdot (\\Box - 2) + \\frac{4}{\\Box + 1}"

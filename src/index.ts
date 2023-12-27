@@ -1,78 +1,97 @@
-import { latexExpressions } from './latexExpressions';
+import { glob } from 'glob';
+import { readFile } from 'fs/promises';
 
-import Jimp from 'jimp';
-import texsvg from 'texsvg';
-import svg2img from 'svg2img';
-import express, { Request, Response } from 'express';
+import express from 'express';
 import dotenv from 'dotenv';
+import toml from 'toml';
 
-async function handleRequest(_: Request, response: Response) {
-  const randomIndex = Math.floor(Math.random() * latexExpressions.length);
-  let latexExpression = latexExpressions[randomIndex];
+import { render } from './render';
 
-  latexExpression = latexExpression.replace(/\\Box/g, () => {
-    return Math.floor(Math.random() * 1000).toString();
-  });
+import type { Request, Response } from 'express';
 
-  const image = new Jimp(1200, 600, 0xffffffff);
-  const latexSvg = await texsvg(latexExpression);
-  const latexPngBuffer = await new Promise<Buffer>((resolve, reject) => {
-    svg2img(latexSvg, {
-      quality: 100,
-      resvg: {
-        fitTo: {
-          mode: 'width',
-          value: 1000
-        }
-      }
-    }, (error, buffer) => {
-      if (error)
-        return reject(error);
-      resolve(buffer);
-    });
-  });
-  const png = await Jimp.read(latexPngBuffer);
+const currentDirectory = process.cwd();
 
-  image.composite(png, 100, 250);
-  image.print(
-    await Jimp.loadFont(Jimp.FONT_SANS_64_BLACK),
-    0, 50,
-    {
-      text: '99.9% of people can\'t solve this',
-      alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
-      alignmentY: Jimp.VERTICAL_ALIGN_TOP
-    },
-    1200, 250
-  );
-  image.print(
-    await Jimp.loadFont(Jimp.FONT_SANS_16_BLACK),
-    0, 0,
-    {
-      text: `Equation picked: ${randomIndex}`,
-      alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER
-    },
-    1200, 10
-  );
+let equationSets: Record<string, EquationSet> = {};
 
-  // const response = new Response(await image.getBufferAsync(Jimp.MIME_PNG));
-  // response.headers.set('Content-Type', 'image/png');
-  // response.headers.set('Cache-Control', 'no-store');
-  // return response;
-
-  response.contentType('image/png');
-  response.header('Cache-Control', 'no-store');
-  response.header('Expires', '0');
-  response.header('Pragma', 'no-cache');
-  response.header('Surrogate-Control', 'no-store');
-  response.header('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-  response.send(await image.getBufferAsync(Jimp.MIME_PNG));
+export interface Information {
+  name: string;
+  description: string;
+  author: string;
+  title: string;
 }
 
-const app = express();
+export interface Equation {
+  latex: string;
+  todo?: string; // Basically like if it was a question about solving x, it'll say solve for x
+}
 
-dotenv.config();
+export interface EquationSet {
+  information: Information;
+  equations: Equation[];
+}
 
-app.get('/', handleRequest);
-app.listen(process.env.PORT);
+async function index(_: Request, response: Response) {
+  const equations = [];
 
-console.log(`Listening on port ${process.env.PORT}`);
+  for (const equation of Object.values(equationSets)) {
+    equations.push(
+      `${equation.information.title}<br><a href="/${equation.information.name}">${equation.information.name} - ${equation.information.description}</a><br>made by ${equation.information.author}`,
+    );
+  }
+
+  response.send(equations.join('<br><br>'));
+}
+
+async function handleEquationSlug(request: Request, response: Response) {
+  const slug = request.params.equation;
+  const equationSet = equationSets[slug];
+
+  if (!equationSet) return response.status(404).send('Set not found');
+
+  const randomEquation =
+    equationSet.equations[
+      Math.floor(Math.random() * equationSet.equations.length)
+    ];
+
+  const imageBuffer = await render(equationSet.information, randomEquation);
+
+  response.setHeader('Content-Type', 'image/png');
+  response.setHeader('Cache-Control', 'no-store');
+  response.setHeader('Pragma', 'no-cache');
+  response.setHeader('Expires', '0');
+  response.setHeader('Last-Modified', new Date().toUTCString());
+  response.setHeader('Content-Length', imageBuffer.length);
+  response.send(imageBuffer);
+}
+
+async function fetchSets(): Promise<Record<string, EquationSet>> {
+  const files = await glob.glob(currentDirectory + '/sets/*.toml', {
+    absolute: true,
+  });
+  const sets: Record<string, EquationSet> = {};
+
+  for (const file of files) {
+    const data = await readFile(file, 'utf-8');
+    const parsed: EquationSet = toml.parse(data);
+    const name = parsed.information.name;
+
+    sets[name] = parsed;
+  }
+
+  return sets;
+}
+
+async function bootstrap() {
+  const app = express();
+
+  dotenv.config();
+  equationSets = await fetchSets();
+
+  app.get('/', index);
+  app.get('/:equation', handleEquationSlug);
+  app.listen(process.env.PORT);
+
+  console.log(`Listening on port ${process.env.PORT}`);
+}
+
+bootstrap();
