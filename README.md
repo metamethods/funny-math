@@ -12,35 +12,8 @@ A website that generates random math equations with random numbers using the LaT
 ```bash
 git clone https://github.com/metamethods/funny-math.git
 ```
-
 2. Install dependencies
-__pnpm__
-```bash
-pnpm i
-```
-__npm__
-```bash
-npm i
-```
-__yarn__
-```bash
-yarn
-```
-
 3. Build the project
-__pnpm__
-```bash
-pnpm build
-```
-__npm__
-```bash
-npm run build
-```
-__yarn__
-```bash
-yarn build
-```
-
 4. Profit (The build will be in the `dist` folder)
 
 ## Contributing
@@ -60,7 +33,6 @@ title = # The Actual title that is display when generating a new expression
 expression = # The expression in LaTeX format
 todo = # What the answer is supposed to be expressed as (NOT REQUIRED)
 ```
-
 4. Create a pull request with your changes, and I'll happily merge it in! (if its good enough)
 
 ### Other Contributions
