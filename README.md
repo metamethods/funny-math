@@ -28,6 +28,7 @@ author = # Your name
 title = # The Actual title that is display when generating a new expression
 ```
 3. Add the expressions to the file in the following format:
+__Note:__ To add placeholders into the expression, use the following format: `\Box`. All `\Box` instances will be replaced with numbers from `0 - 25`. If you would like a negative number, use `-\Box` instead.
 ```toml
 [[expressions]]
 expression = # The expression in LaTeX format
