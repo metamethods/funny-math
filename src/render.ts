@@ -62,8 +62,7 @@ export async function render(
 
   const titleFont = await Jimp.loadFont(Jimp.FONT_SANS_64_BLACK);
   const todoFont = await Jimp.loadFont(Jimp.FONT_SANS_32_BLACK);
-  const authorFont = await Jimp.loadFont(Jimp.FONT_SANS_16_BLACK);
-  const regularFont = await Jimp.loadFont(Jimp.FONT_SANS_12_BLACK);
+  const regularFont = await Jimp.loadFont(Jimp.FONT_SANS_16_BLACK);
 
   image.composite(
     latexImage,
@@ -94,7 +93,7 @@ export async function render(
   );
 
   image.print(
-    authorFont,
+    regularFont,
     0,
     64 + 40,
     {
